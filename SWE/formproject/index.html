@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>i4One</title>
+</head>
+<body>
+  <h1 id="title">i4One</h1>
+  <p id="description">One <em>transforming place</em> where  <br><strong style="color:#FDE7BB">One Leader</strong> connects | mentors | enables |empowers | <br>One willing & discipline <strong style="color:#FDE7BB">Beginner</strong>. </p>
+
+<img src="./i24logo.png" alt="i4One logo" id="i4One">
+   
+<form id="survey-form" method="post" action="https://register-demo.i4One.org">
+  <fieldset id="basic-info">
+    <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Mathule Marax"required/></label>
+    <label for="email" id="email-label">Email address: <input type="email" id="email" placeholder="joe@mail.com" required/></label>
+    <label for="tel" id="phone-label">Phone number: <input type="tel" placeholder="+44-7000-111-123" min="0" max="11" id="tel" required/></label>
+    <label for="number" id="number-label">Number: <input type="number" placeholder="5" min="0" max="9" id="number" required/></label>
+  </fieldset>
+
+  <fieldset>
+    <label for="dropdown">What career path do you desire:
+    <select id="dropdown">
+      <option>choose a program</option>
+      <option>Artificial Intelligence</option>
+      <option>Cloud Engineering</option>
+      <option>Cyber Security</option>
+      <option>Data Analytics & Visualization</option>
+      <option>Data Engineering</option>
+      <option>Data Sciences</option>
+      <option>Machine Learning</option>
+      <option>Product Management</option>
+      <option>UI/UX</option>
+    </select>
+    </label>
+  </fieldset>
+          
+  <fieldset>
+    <legend>Duration of Mentorship: </legend>
+    <label> <input type="radio" name="plan" class="choice" checked />Pathfinder: 3 - 6 months </label>
+    <label> <input  type="radio" name="plan" class="choice" /> Navigator: 6 - 12 months</label>
+    <label> <input  type="radio" name="plan" class="choice" /> Establisher: 12 - 18 months</label>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Choose a Cohort: </legend>
+    <label> <input type="checkbox" name="cohort" value="Jan 2025" />Jan 2025 </label>
+    <label> <input type="checkbox" name="cohort" value="Sept 2025" />Sept 2025 </label>
+  </fieldset>
+
+  <fieldset>
+    <label for="cv">Upload CV: <input type="file" name="cv" id="cv" required/></label>
+    <label for="passport">Upload passport: <input type="file" name="passport" id="passport" required/></label>
+    <label for="reason">A note to your mentor:<textarea id="reason" name="reason" rows="3" cols="30" placeholder="write your why?"></textarea></label>
+  </fieldset>
+          
+    <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" class="choice" required name="terms-and-conditions"/> I accept the <a href="https://www.i4One.org/terms-of-service/">terms and conditions</a></label>
+  <input id="submit" type="submit" value="Submit" />
+</form>
+</body>
+</html>
