@@ -1,18 +1,18 @@
+
+// This is the function to get Human's choice:
 function getComputerChoice() {
     
-    let computerChoice = " "
+    let computerChoice = " ";
     
-    let computer = ["rock", "paper", "scissors"]
-
-    let value = Math.floor(Math.random() * computer.length);
-    if (value === 0) {
-        computerChoice = computer[0];
+    let compute = Math.floor(Math.random() * 3);
+    if (compute === 0) {
+        computerChoice = "rock";
     }
-    if (value === 1) {
-        computerChoice = computer[1];
+    if (compute === 1) {
+        computerChoice = "paper";
     }
-    if (value === 2) {
-         computerChoice = computer[2];
+    if (compute === 2) {
+         computerChoice = "scissors";
     }
     console.log(`computer: ${computerChoice}`);
     return computerChoice;
@@ -42,19 +42,23 @@ function getHumanChoice() {
     return humanChoice;
 }
 
+//To keep record of players scores
+
+let computerScore = 0;
+let humanScore = 0;
 
 // This is the function to play a single round of the game:
 
 let playRound = function(humanChoice, computerChoice) {
     
-    if (humanChoice === computerChoice) {
+    if (humanSelect === computeSelect) {
         humanScore++;
-        console.log("You win! " + humanChoice + " beats "  + computerChoice);
+        console.log(`You win! human beats computer`);
         console.log(`player: ${humanScore}  :  computer: ${computerScore}`);
     }
-    else if (humanChoice !== computerChoice) {
+    else if (humanSelect !== computeSelect) {
         computerScore++;
-        console.log("You loose! " + computerChoice + " beats "  + humanChoice);
+        console.log("You loose! computer beats human");
         console.log(`player: ${humanScore}  :  computer: ${computerScore}`);
     }
     else {
@@ -62,30 +66,18 @@ let playRound = function(humanChoice, computerChoice) {
     }
 };
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+const humanSelect = getHumanChoice();
+const computeSelect = getComputerChoice();
+playRound(humanSelect, computeSelect);
 
-// This is the function to play 5 rounds of the game:
 
-let playGame = function() {
-    // To play the game in find rounds, repeat the rounds 5 times.
-    //round 1:
-    playRound(humanSelection, computerSelection);
-
-    //round 2: 
-    playRound(humanSelection, computerSelection);
-
-    //round 3:
-    playRound(humanSelection, computerSelection);
-
-    //round 4: 
-    playRound(humanSelection, computerSelection);
-
-    //round 5:
-    playRound(humanSelection, computerSelection);
-
-    // Let us have a winner after 5 rounds of play:
-
+function playGame() {
+    
+    for (let i = 0; i < 5; i++) {
+        
+    playRound(humanSelect, computeSelect);
+        
+}
     console.log(`Here are the final result`);
     console.log(`player: ${humanScore}  :  computer: ${computerScore}`); 
 
@@ -98,6 +90,5 @@ let playGame = function() {
     else {
         console.log("Ooh! we go again!");
     }
-};
-
+}
 playGame();
