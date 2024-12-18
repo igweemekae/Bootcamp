@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+#logo{
+    width: 85px;
+}
+
+.intro{
+    display: flex;
+    justify-content:center;
+    background-color:#03001C;
+    color: white;
+    font-style: Tahoma;
+    gap: 5px;
+    padding: 20px 0;
+}
+
+#schedule{
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar{
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content:space-around;
+    gap: 150px;
+    padding: 20px 0;
+}
+
+.navitems{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#options{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+button{
+    background-color: white;
+    color: red;
+    border: 2px solid red; /* Green */
+}
+
+.content{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+
+}
+
+.left-page{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.left-page-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50vh;
+}
+#box1-header{
+    font-size: 36px;
+}
+#box2-header{
+    font-size: 18px;
+    color: red;
+}
+#realimg{
+    width: 100vh;
+}
+
+.ranking{
+    background-color: red;
+}
+.page1{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page1-text{
+    width: 50vh;
+}
+#page1-header{
+    font-size: 36px
+}
+.awards-display{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.awards{
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+}
+#award{
+    width: 100px;
+}
+.footer{
+    background-color: #35374B;
+    color: white;
+}
+#footer-logo{
+    width: 100px;
+}
+.fh-info{
+    padding: 20px 0;
+    width: 75vh;
+}
+.footer-header{
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    display: flex;
+    justify-content:space-around;
+}
+#icon{
+    width: 12px;
+}
